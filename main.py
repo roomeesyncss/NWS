@@ -682,13 +682,12 @@ def main():
     scraper = NewsFlowPro()
 
     # Header
-    st.title("📰 News Scraper with Date Filter")
-    st.markdown("**Enhanced Defense & Intelligence News Scraper - Today/Yesterday Only**")
+    st.title("News Scraper")
 
     # Date filter info prominently displayed
     today = datetime.now().date()
     yesterday = today - timedelta(days=1)
-    st.info(f"🗓️ **Date Filter Active:** Only articles from {today} (today) or {yesterday} (yesterday) will be scraped")
+    st.info(f"🗓️ **Date Filter Active:**")
 
     # Sidebar with enhanced notification status
     with st.sidebar:
@@ -865,7 +864,6 @@ If you receive this message, all enhanced features are working! 🎉"""
 
 
 def show_enhanced_news_dashboard(scraper):
-    st.header("📰 Enhanced News Dashboard with Date Filtering")
 
     # Date info display
     today = datetime.now().date()
